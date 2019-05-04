@@ -15,3 +15,10 @@ const a = 'Hello world!'
 
 console.log(a);
 ```
+1. First
+2. Second
+5. Third
+
+* Unordered first
+- Unordered second
++ Unordered third
