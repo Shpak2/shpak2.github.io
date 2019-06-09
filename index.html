@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Uber Eats</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
@@ -17,7 +19,7 @@
             <div class="location">
                 <div class="address"><span>asap</span></div>
                 <span class="to">to</span>
-                <input type="text" placeholder="ul. Tarasivska St, 16">
+                <input type="text" placeholder="Enter your address">
         </div>
     </div>
         <div class="col">
@@ -25,7 +27,7 @@
                 <li class="sign"><a href="#"class="registration"><span>Sign In</span></a></li>
                 <li class="reg"><a href="#" class="registration white"><span>Register</span></a></li>
             </ul>
-            <a href="#"><img src="/images/basket.svg" alt="pay"></a>
+            <a class="pay" href="#"><img src="/images/basket.svg" alt="pay"></a>
         </div>
         </div>
         
@@ -40,6 +42,12 @@
             </form>
             <hr class="line">
     </section>
+    <div class="location_mobile">
+        <span class="to">when</span>
+        <div class="address"><span>asap</span></div>
+        <span class="to">to</span>
+        <input type="text" placeholder="Enter your address">
+     </div>
 
     <main class="price max_width clearfix">
         <h1>Kyiv Restaurants</h1>
@@ -135,7 +143,7 @@
        <div class="card">
         <a href="#modal7"><img src="/images/mimosa.jpg" alt="Mimosa Brooklyn Pizza"> </a>
         <a href="#modal7" class="product_name">Mimosa Brooklyn Pizza</a>
-        <p class="product_type">&#8372;&#8372; &middot; Італійська &middot; Піца &middot; Американська</p>
+        <p class="product_type">&#8372; &middot; Італійська &middot; Піца &middot; Американська</p>
         <p class="expectation">15-25 Min</p>
         <a href="#x" class="overlay" id="modal7"></a>
        <div class="popup">
@@ -165,7 +173,7 @@
        <div class="card">
         <a href="#modal9"><img src="/images/druzicafe.jpg" alt="Druzi Cafe"> </a>
         <a href="#modal9" class="product_name">Druzi Cafe</a>
-        <p class="product_type">&#8372;&#8372; &middot; Американська &middot; Сучасна європейська &middot; У...</p>
+        <p class="product_type">&#8372; &middot; Американська &middot; Сучасна європейська</p>
         <p class="expectation">30-40 Min</p>
         <a href="#x" class="overlay" id="modal9"></a>
        <div class="popup">
@@ -234,6 +242,10 @@
             <p class="footer_menu"><a href="#">Terms</a></p>
         </div>
     </footer>
+    <div id="scrollTop" onclick="goUp()"></div>
+    <!-- <a href="#" class="to_top" onclick="window.scrollTo(0,0);return!1;">
+            <img src="/images/arrow.png" alt="to top">
+          </a> -->
 </div>
 </body>
 </html>
